@@ -171,18 +171,12 @@ class UserController extends Controller
 }
 ```
 
----
-
 Dengan menggunakan trait ini, Anda dapat memastikan bahwa semua respons API di aplikasi Anda memiliki format yang konsisten, sehingga aplikasi lebih mudah dikelola dan memberikan pengalaman pengembangan yang lebih baik.
 
-```
-
 ### Penjelasan:
+
 - **`requestSuccessData`**: Digunakan untuk mengembalikan respons sukses dengan data.
 - **`badRequest`**: Mengembalikan respons error jika terjadi kesalahan pada permintaan.
 - **`requestValidation`**: Mengembalikan respons jika validasi gagal.
 - **`requestUnauthorized`**: Digunakan ketika permintaan tidak terotorisasi.
 - **`forbidden`**: Digunakan ketika permintaan tidak diizinkan (forbidden).
-
-Dokumentasi ini memberikan kombinasi antara penjelasan berbahasa Indonesia dan contoh respons berbahasa Inggris, sesuai dengan format yang diinginkan.
-```
