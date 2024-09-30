@@ -8,7 +8,7 @@ namespace App\Traits;
  */
 trait ResponseAPI
 {
-    public static function requestSuccessData($data, $status = 'success', $message = "Success!")
+    public static function requestSuccessData($data, $message = "Success!", $status = 'success')
     {
         return response()->json([
             "status" => $status,
@@ -31,14 +31,14 @@ trait ResponseAPI
             "message" => $message,
         ], 400);
     }
-    public static function requestSuccess($code = 200, $message = 'Success!', $status = 'success')
+    public static function requestSuccess($message = 'Success!', $code = 200, $status = 'success')
     {
         return response()->json([
             "status" => $status,
             "message" => $message,
         ], $code);
     }
-    public static function badRequest($error = 'bad_request', $message = 'bad_request')
+    public static function badRequest($error = 'bad_request', $message = 'error')
     {
         return response()->json([
             "status" => "error",
